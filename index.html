@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Running Athlete Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">   
+<h1>Running Athlete Registration Form</h1>
+<p>Thank you for signing up at our club. Please fill in your information and we will contact you shortly to complete your membership.</p>
+<p> Our powerful registration software was designed by race directors and athletes that understand your needs. Race setup is FREE, and we can get your race ready to process registrations in minutes.</p> 
+</div>
+
+<div class="container">
+<h2>Contact Information</h2>
+<form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <form action="contactus.php" method="post">
+
+        <p>Name:</p>
+        <p><input type="text" name="name" value="Your name"></p>
+    
+        
+        <p>Age</p>
+        <p><textarea name="comments" rows="5" cols="20">Age</textarea></p>
+    
+
+        <p>What size do ypu wearing for T-shirt?</p>
+        <p><input type="radio" name="What size do ypu wearing for T-shirt?" value="xs"> XS</p>
+        <p><input type="radio" name="What size do ypu wearing for T-shirt?" value="s"> S</p>
+        <p><input type="radio" name="What size do ypu wearing for T-shirt?" value="m"> M</p>
+        <p><input type="radio" name="What size do ypu wearing for T-shirt?" value="l"> L</p>
+    
+        <p><input type="submit"></p>
+    
+    </form>
+    
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Sex</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Female</option>
+          <option>Male</option>
+        </select>
+      </div>
+      <form action="someKindOfProcessingScript.php" method="post">
+        <label for="housenumber">House number</label>
+        <input name="housenumber" id="housenumber">
+    
+        <label for="street">Street</label>
+        <input name="street" id="street">
+
+        <label for="city name">City Name</label>
+        <input name="city name" id="City Name">
+
+        <label for="zip code">Zip Code</label>
+        <input name="zip code" id="zip code">
+
+        <label for="state">State</label>
+        <input name="state" id="state">
+
+
+        <input type="submit">
+    </form>
+    
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
